@@ -1,0 +1,6 @@
+{
+  "filename": "${PROJECT_HOME}/dataload.hwf",
+  "name": "dataload",
+  "statusVariables": "STATUS,MAX,COUNTER",
+  "enabled": true
+}
