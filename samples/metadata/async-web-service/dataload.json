@@ -1,5 +1,6 @@
 {
   "filename": "${PROJECT_HOME}/dataload.hwf",
+  "bodyContentVariable": "ASYNC_CONTENT",
   "name": "dataload",
   "statusVariables": "STATUS,MAX,COUNTER",
   "enabled": true

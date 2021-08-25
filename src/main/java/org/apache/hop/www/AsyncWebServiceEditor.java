@@ -56,6 +56,7 @@ public class AsyncWebServiceEditor extends MetadataEditor<AsyncWebService> {
   private Button wEnabled;
   private TextVar wFilename;
   private TextVar wStatusVars;
+  private TextVar wContentVar;
 
   public AsyncWebServiceEditor(
       HopGui hopGui, MetadataManager<AsyncWebService> manager, AsyncWebService metadata) {
@@ -179,7 +180,7 @@ public class AsyncWebServiceEditor extends MetadataEditor<AsyncWebService> {
     wFilename.setLayoutData(fdFilename);
     lastControl = wlFilename;
 
-    // Transform name
+    // Status variables
     //
     Label wlStatusVars = new Label(parent, SWT.RIGHT);
     props.setLook(wlStatusVars);
@@ -196,14 +197,35 @@ public class AsyncWebServiceEditor extends MetadataEditor<AsyncWebService> {
     fdStatusVars.right = new FormAttachment(100, 0);
     fdStatusVars.top = new FormAttachment(wlStatusVars, 0, SWT.CENTER);
     wStatusVars.setLayoutData(fdStatusVars);
-    // lastControl = wlStatusVars;
+    lastControl = wlStatusVars;
 
+
+    // Status variables
+    //
+    Label wlContentVar = new Label(parent, SWT.RIGHT);
+    props.setLook(wlContentVar);
+    wlContentVar.setText("Content variable");
+    FormData fdlContentVar = new FormData();
+    fdlContentVar.left = new FormAttachment(0, 0);
+    fdlContentVar.right = new FormAttachment(middle, 0);
+    fdlContentVar.top = new FormAttachment(lastControl, 2 * margin);
+    wlContentVar.setLayoutData(fdlContentVar);
+    wContentVar = new TextVar(manager.getVariables(), parent, SWT.CHECK | SWT.LEFT);
+    props.setLook(wContentVar);
+    FormData fdContentVar = new FormData();
+    fdContentVar.left = new FormAttachment(middle, margin);
+    fdContentVar.right = new FormAttachment(100, 0);
+    fdContentVar.top = new FormAttachment(wlContentVar, 0, SWT.CENTER);
+    wContentVar.setLayoutData(fdContentVar);
+    // lastControl = wlContentVar;
+    
     // Add listener to detect change after loading data
     ModifyListener lsMod = e -> setChanged();
     wName.addModifyListener(lsMod);
     wEnabled.addListener(SWT.Selection, e -> setChanged());
     wFilename.addModifyListener(lsMod);
     wStatusVars.addModifyListener(lsMod);
+    wContentVar.addModifyListener(lsMod);
 
     setWidgetsContent();
   }

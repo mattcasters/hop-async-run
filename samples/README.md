@@ -25,3 +25,27 @@ To use these samples:
 
 * Add &xml=y to see an XML variant of the workflow status
 
+
+# Curl commands to test...
+
+To execute the "dataload" service:
+
+```
+curl -v \
+  --user cluster:cluster \
+  --request POST \
+  -o async-run.json \
+  -H "Content-Type: application/json" \
+  --data-binary '@/tmp/payload.json' \
+  'http://localhost:8282/hop/asyncRun/?service=dataload&MAX=50000000'
+```
+
+To query the status:
+
+```
+ID=$(cat async-run.json | sed 's/^.*"id":"//g' | sed 's/"}$//g') && \
+curl --user cluster:cluster \
+     --request GET \
+     -o - \
+     'http://localhost:8282/hop/asyncStatus/?service=dataload&id='$ID
+```

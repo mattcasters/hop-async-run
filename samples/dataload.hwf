@@ -44,7 +44,7 @@
       <maximumTimeout>10</maximumTimeout>
       <scaletime>0</scaletime>
       <parallel>N</parallel>
-      <xloc>432</xloc>
+      <xloc>608</xloc>
       <yloc>80</yloc>
       <attributes_hac/>
     </action>
@@ -64,20 +64,8 @@
         </field>
       </fields>
       <parallel>N</parallel>
-      <xloc>256</xloc>
+      <xloc>432</xloc>
       <yloc>80</yloc>
-      <attributes_hac/>
-    </action>
-    <action>
-      <name>wait 10s </name>
-      <description/>
-      <type>DELAY</type>
-      <attributes/>
-      <maximumTimeout>10</maximumTimeout>
-      <scaletime>0</scaletime>
-      <parallel>N</parallel>
-      <xloc>592</xloc>
-      <yloc>192</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -88,7 +76,7 @@
       <maximumTimeout>10</maximumTimeout>
       <scaletime>0</scaletime>
       <parallel>N</parallel>
-      <xloc>432</xloc>
+      <xloc>608</xloc>
       <yloc>320</yloc>
       <attributes_hac/>
     </action>
@@ -108,7 +96,7 @@
         </field>
       </fields>
       <parallel>N</parallel>
-      <xloc>256</xloc>
+      <xloc>432</xloc>
       <yloc>320</yloc>
       <attributes_hac/>
     </action>
@@ -118,7 +106,7 @@
       <type>SUCCESS</type>
       <attributes/>
       <parallel>N</parallel>
-      <xloc>432</xloc>
+      <xloc>608</xloc>
       <yloc>432</yloc>
       <attributes_hac/>
     </action>
@@ -147,7 +135,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>432</xloc>
+      <xloc>608</xloc>
       <yloc>192</yloc>
       <attributes_hac/>
     </action>
@@ -167,7 +155,7 @@
         </field>
       </fields>
       <parallel>N</parallel>
-      <xloc>256</xloc>
+      <xloc>432</xloc>
       <yloc>192</yloc>
       <attributes_hac/>
     </action>
@@ -187,19 +175,25 @@
         </field>
       </fields>
       <parallel>N</parallel>
-      <xloc>256</xloc>
+      <xloc>432</xloc>
       <yloc>432</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Log content</name>
+      <description/>
+      <type>WRITE_TO_LOG</type>
+      <attributes/>
+      <logmessage>ASYNC_CONTENT = ${ASYNC_CONTENT}</logmessage>
+      <loglevel>Minimal</loglevel>
+      <logsubject>Content</logsubject>
+      <parallel>N</parallel>
+      <xloc>272</xloc>
+      <yloc>80</yloc>
       <attributes_hac/>
     </action>
   </actions>
   <hops>
-    <hop>
-      <from>Start</from>
-      <to>Status: Staging data</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>Y</unconditional>
-    </hop>
     <hop>
       <from>Status: Staging data</from>
       <to>wait 10s</to>
@@ -213,20 +207,6 @@
       <enabled>Y</enabled>
       <evaluation>N</evaluation>
       <unconditional>Y</unconditional>
-    </hop>
-    <hop>
-      <from>wait 10s </from>
-      <to>Status: Cleaning up</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>dataload.hpl</from>
-      <to>wait 10s </to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
     </hop>
     <hop>
       <from>wait 10s</from>
@@ -254,6 +234,27 @@
       <to>Success</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>dataload.hpl</from>
+      <to>Status: Cleaning up</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Start</from>
+      <to>Log content</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Log content</from>
+      <to>Status: Staging data</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
       <unconditional>Y</unconditional>
     </hop>
   </hops>

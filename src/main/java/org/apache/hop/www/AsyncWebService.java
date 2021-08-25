@@ -40,14 +40,19 @@ public class AsyncWebService extends HopMetadataBase implements IHopMetadata {
   @HopMetadataProperty private boolean enabled;
   @HopMetadataProperty private String filename;
   @HopMetadataProperty private String statusVariables;
+  @HopMetadataProperty private String bodyContentVariable;
 
-  public AsyncWebService() {}
+  public AsyncWebService() {
+    this.enabled = true;
+    this.bodyContentVariable = "ASYNC_CONTENT";
+  }
 
-  public AsyncWebService(String name, boolean enabled, String filename, String statusVariables) {
+  public AsyncWebService(String name, boolean enabled, String filename, String statusVariables, String bodyContentVariable) {
     super(name);
     this.enabled = enabled;
     this.filename = filename;
     this.statusVariables = statusVariables;
+    this.bodyContentVariable = bodyContentVariable;
   }
 
   /**
@@ -107,5 +112,21 @@ public class AsyncWebService extends HopMetadataBase implements IHopMetadata {
   /** @param statusVariables The statusVariables to set */
   public void setStatusVariables(String statusVariables) {
     this.statusVariables = statusVariables;
+  }
+
+  /**
+   * Gets bodyContentVariable
+   *
+   * @return value of bodyContentVariable
+   */
+  public String getBodyContentVariable() {
+    return bodyContentVariable;
+  }
+
+  /**
+   * @param bodyContentVariable The bodyContentVariable to set
+   */
+  public void setBodyContentVariable( String bodyContentVariable ) {
+    this.bodyContentVariable = bodyContentVariable;
   }
 }

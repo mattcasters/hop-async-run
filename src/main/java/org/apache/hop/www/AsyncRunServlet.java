@@ -22,6 +22,7 @@ import org.apache.hop.core.Const;
 import org.apache.hop.core.annotations.HopServerServlet;
 import org.apache.hop.core.encryption.Encr;
 import org.apache.hop.core.exception.HopException;
+import org.apache.hop.core.logging.LogLevel;
 import org.apache.hop.core.logging.LoggingObjectType;
 import org.apache.hop.core.logging.SimpleLoggingObject;
 import org.apache.hop.core.metadata.SerializableMetadataProvider;
@@ -40,7 +41,9 @@ import org.json.simple.JSONObject;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -124,9 +127,33 @@ public class AsyncRunServlet extends BaseHttpServlet implements IHopServerPlugin
       // Output the ID to the response output stream...
       //
       WorkflowMeta workflowMeta = new WorkflowMeta(variables, filename, metadataProvider);
+
       LocalWorkflowEngine workflow = new LocalWorkflowEngine(workflowMeta, servletLoggingObject);
       workflow.setContainerId(serverObjectId);
       workflow.setMetadataProvider( metadataProvider );
+      workflow.setLogLevel( LogLevel.BASIC );
+
+      // See if we need to pass a variable with the content in it...
+      //
+      // Read the content posted?
+      //
+      String contentVariable = variables.resolve( webService.getBodyContentVariable() );
+      String content = "";
+      if (StringUtils.isNotEmpty( contentVariable )) {
+        try (InputStream in = request.getInputStream()) {
+          try (ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
+            byte[] buffer = new byte[1024];
+            while (in.read(buffer) != -1) {
+              outputStream.write(buffer);
+            }
+
+            // Now we have the content...
+            //
+            content = new String(outputStream.toByteArray(), StandardCharsets.UTF_8 );
+          }
+        }
+        workflow.setVariable( contentVariable, Const.NVL(content, "") );
+      }
 
       // Set all the other parameters as variables/parameters...
       //
@@ -175,6 +202,7 @@ public class AsyncRunServlet extends BaseHttpServlet implements IHopServerPlugin
 
       String jsonString = json.toJSONString();
       outputStream.write(jsonString.getBytes(StandardCharsets.UTF_8));
+      outputStream.write("\n".getBytes(StandardCharsets.UTF_8));
       outputStream.flush();
 
       response.setStatus(HttpServletResponse.SC_OK);
@@ -182,6 +210,10 @@ public class AsyncRunServlet extends BaseHttpServlet implements IHopServerPlugin
     } catch (Exception e) {
       throw new ServletException("Error running asynchronous web service", e);
     }
+  }
+
+  @Override protected void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
+    super.doPost( request, response );
   }
 
   public String toString() {

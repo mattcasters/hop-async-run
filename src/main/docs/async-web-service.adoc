@@ -35,11 +35,22 @@ The following servlet plugins are used to run and query the status of a workflow
 [options="header"]
 |===
 |Option |Description
-|Name|The name of the asynchronous web service.  This is the name that is passed into the `asyncRun` webService URL.
-|Enabled|Enables or disabled this Asynchronous Web Service
-|Filename on the server|This is the filename on the server.  Make sure that the workflow you want to execute is available on the server.
-|Content type|The content type which will get reported by the webService servlet
-|List status on server|Enable this option if you want the executions of the asynchronous web service workflow(s) to be listed in the status of the server.
+
+|Name
+|The name of the asynchronous web service.  This is the name that is passed into the `asyncRun` webService URL.
+
+|Enabled
+|Enables or disabled this Asynchronous Web Service
+
+|Filename on the server
+|This is the filename on the server.  Make sure that the workflow you want to execute is available on the server.
+
+|Status variables
+|List the variables that are being reported back when the asynchronous status service is queried
+
+|Content variable
+|The name of the variable which will contain the content body of the service call
+
 |===
 
 == Samples
