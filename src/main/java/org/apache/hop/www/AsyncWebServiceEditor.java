@@ -327,6 +327,7 @@ public class AsyncWebServiceEditor extends MetadataEditor<AsyncWebService> {
     wEnabled.setSelection(ws.isEnabled());
     wFilename.setText(Const.NVL(ws.getFilename(), ""));
     wStatusVars.setText(Const.NVL(ws.getStatusVariables(), ""));
+    wContentVar.setText(Const.NVL(ws.getBodyContentVariable(), ""));
   }
 
   @Override
@@ -335,6 +336,7 @@ public class AsyncWebServiceEditor extends MetadataEditor<AsyncWebService> {
     ws.setEnabled(wEnabled.getSelection());
     ws.setFilename(wFilename.getText());
     ws.setStatusVariables(wStatusVars.getText());
+    ws.setBodyContentVariable(wContentVar.getText());
   }
 
   @Override
