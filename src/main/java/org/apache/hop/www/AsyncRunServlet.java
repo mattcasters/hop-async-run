@@ -143,9 +143,11 @@ public class AsyncRunServlet extends BaseHttpServlet implements IHopServerPlugin
         try (InputStream in = request.getInputStream()) {
           try (ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
             byte[] buffer = new byte[1024];
-            while (in.read(buffer) != -1) {
-              outputStream.write(buffer);
+            int length;
+            while ( (length = in.read(buffer)) != -1) {
+              outputStream.write(buffer, 0, length);
             }
+            outputStream.flush();
 
             // Now we have the content...
             //
