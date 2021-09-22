@@ -1,0 +1,15 @@
+{
+  "engineRunConfiguration": {
+    "Remote": {
+      "export_resources": false,
+      "resources_target_folder": "",
+      "safe_mode": "local",
+      "resources_source_folder": "",
+      "server_poll_interval": "1000",
+      "hop_server": "8282",
+      "server_poll_delay": "1000"
+    }
+  },
+  "name": "8282",
+  "description": ""
+}

@@ -35,7 +35,7 @@
     </hop>
     <hop>
       <from>id</from>
-      <to>Set COUNTER variable</to>
+      <to>Do something else</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -64,48 +64,6 @@
     </GUI>
   </transform>
   <transform>
-    <name>Set COUNTER variable</name>
-    <type>ScriptValueMod</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>
-      <jsScript>
-        <jsScript_type>0</jsScript_type>
-        <jsScript_name>RowScript</jsScript_name>
-        <jsScript_script>
-counter=counter+1;
-
-if ((counter%1000000)==0) {
-  _transform_.logBasic("Counter is now at "+counter);
-  setVariable("COUNTER", ""+counter, "r");
-}
-
-</jsScript_script>
-      </jsScript>
-      <jsScript>
-        <jsScript_type>1</jsScript_type>
-        <jsScript_name>StartScript</jsScript_name>
-        <jsScript_script>
-var counter = 0;
-
-</jsScript_script>
-      </jsScript>
-    </jsScripts>
-    <fields>    </fields>
-    <attributes/>
-    <GUI>
-      <xloc>480</xloc>
-      <yloc>96</yloc>
-    </GUI>
-  </transform>
-  <transform>
     <name>id</name>
     <type>Sequence</type>
     <description/>
@@ -117,7 +75,6 @@ var counter = 0;
       <schema_name/>
     </partitioning>
     <use_counter>Y</use_counter>
-    <connection>postgres</connection>
     <use_database>N</use_database>
     <increment_by>1</increment_by>
     <max_value>999999999</max_value>
@@ -127,6 +84,23 @@ var counter = 0;
     <attributes/>
     <GUI>
       <xloc>304</xloc>
+      <yloc>96</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Do something else</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <GUI>
+      <xloc>464</xloc>
       <yloc>96</yloc>
     </GUI>
   </transform>

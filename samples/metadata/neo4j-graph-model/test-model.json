@@ -1,0 +1,847 @@
+{
+  "relationships": [
+    {
+      "nodeSource": "CashIn",
+      "name": "NEXT",
+      "description": "CashIn - CashIn",
+      "nodeTarget": "CashIn",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashIn",
+      "name": "NEXT",
+      "description": "CashIn - Payment",
+      "nodeTarget": "Payment",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Debit",
+      "name": "NEXT",
+      "description": "Debit - Debit",
+      "nodeTarget": "Debit",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashOut",
+      "name": "NEXT",
+      "description": "CashOut - Debit",
+      "nodeTarget": "Debit",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Transaction",
+      "name": "NEXT",
+      "description": "Transaction - Debit",
+      "nodeTarget": "Debit",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Payment",
+      "name": "NEXT",
+      "description": "Payment - CashIn",
+      "nodeTarget": "CashIn",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Debit",
+      "name": "NEXT",
+      "description": "Debit - Payment",
+      "nodeTarget": "Payment",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "HAS_EMAIL",
+      "description": "Client - Email",
+      "nodeTarget": "Email",
+      "label": "HAS_EMAIL",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashIn",
+      "name": "NEXT",
+      "description": "CashIn - Transaction",
+      "nodeTarget": "Transaction",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Payment",
+      "name": "NEXT",
+      "description": "Payment - Payment",
+      "nodeTarget": "Payment",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "HAS_PHONE",
+      "description": "Client - Phone",
+      "nodeTarget": "Phone",
+      "label": "HAS_PHONE",
+      "properties": []
+    },
+    {
+      "nodeSource": "Payment",
+      "name": "NEXT",
+      "description": "Payment - Transaction",
+      "nodeTarget": "Transaction",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Debit",
+      "name": "NEXT",
+      "description": "Debit - CashOut",
+      "nodeTarget": "CashOut",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Transaction",
+      "name": "NEXT",
+      "description": "Transaction - Transaction",
+      "nodeTarget": "Transaction",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashIn",
+      "name": "NEXT",
+      "description": "CashIn - CashOut",
+      "nodeTarget": "CashOut",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashIn",
+      "name": "NEXT",
+      "description": "CashIn - Debit",
+      "nodeTarget": "Debit",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Payment",
+      "name": "NEXT",
+      "description": "Payment - CashOut",
+      "nodeTarget": "CashOut",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashOut",
+      "name": "NEXT",
+      "description": "CashOut - Transaction",
+      "nodeTarget": "Transaction",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashOut",
+      "name": "NEXT",
+      "description": "CashOut - Payment",
+      "nodeTarget": "Payment",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashOut",
+      "name": "NEXT",
+      "description": "CashOut - CashIn",
+      "nodeTarget": "CashIn",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Transaction",
+      "name": "NEXT",
+      "description": "Transaction - Payment",
+      "nodeTarget": "Payment",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Transaction",
+      "name": "NEXT",
+      "description": "Transaction - CashOut",
+      "nodeTarget": "CashOut",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Transaction",
+      "name": "TO",
+      "description": "Transaction - Bank",
+      "nodeTarget": "Bank",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "PERFORMED",
+      "description": "Client - Debit",
+      "nodeTarget": "Debit",
+      "label": "PERFORMED",
+      "properties": []
+    },
+    {
+      "nodeSource": "Transaction",
+      "name": "TO",
+      "description": "Transaction - Merchant",
+      "nodeTarget": "Merchant",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Transaction",
+      "name": "TO",
+      "description": "Transaction - Client",
+      "nodeTarget": "Client",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Payment",
+      "name": "TO",
+      "description": "Payment - Merchant",
+      "nodeTarget": "Merchant",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Debit",
+      "name": "TO",
+      "description": "Debit - Client",
+      "nodeTarget": "Client",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "FIRST_TX",
+      "description": "Client - CashOut",
+      "nodeTarget": "CashOut",
+      "label": "FIRST_TX",
+      "properties": []
+    },
+    {
+      "nodeSource": "Transaction",
+      "name": "NEXT",
+      "description": "Transaction - CashIn",
+      "nodeTarget": "CashIn",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "FIRST_TX",
+      "description": "Client - CashIn",
+      "nodeTarget": "CashIn",
+      "label": "FIRST_TX",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "PERFORMED",
+      "description": "Client - Payment",
+      "nodeTarget": "Payment",
+      "label": "PERFORMED",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "PERFORMED",
+      "description": "Client - CashIn",
+      "nodeTarget": "CashIn",
+      "label": "PERFORMED",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "FIRST_TX",
+      "description": "Client - Payment",
+      "nodeTarget": "Payment",
+      "label": "FIRST_TX",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "PERFORMED",
+      "description": "Client - Transaction",
+      "nodeTarget": "Transaction",
+      "label": "PERFORMED",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "FIRST_TX",
+      "description": "Client - Debit",
+      "nodeTarget": "Debit",
+      "label": "FIRST_TX",
+      "properties": []
+    },
+    {
+      "nodeSource": "Debit",
+      "name": "NEXT",
+      "description": "Debit - CashIn",
+      "nodeTarget": "CashIn",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashOut",
+      "name": "NEXT",
+      "description": "CashOut - CashOut",
+      "nodeTarget": "CashOut",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Debit",
+      "name": "NEXT",
+      "description": "Debit - Transaction",
+      "nodeTarget": "Transaction",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Payment",
+      "name": "NEXT",
+      "description": "Payment - Debit",
+      "nodeTarget": "Debit",
+      "label": "NEXT",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "FIRST_TX",
+      "description": "Client - Transaction",
+      "nodeTarget": "Transaction",
+      "label": "FIRST_TX",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "PERFORMED",
+      "description": "Client - CashOut",
+      "nodeTarget": "CashOut",
+      "label": "PERFORMED",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "LAST_TX",
+      "description": "Client - CashIn",
+      "nodeTarget": "CashIn",
+      "label": "LAST_TX",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashIn",
+      "name": "TO",
+      "description": "CashIn - Merchant",
+      "nodeTarget": "Merchant",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Payment",
+      "name": "TO",
+      "description": "Payment - Bank",
+      "nodeTarget": "Bank",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashIn",
+      "name": "TO",
+      "description": "CashIn - Client",
+      "nodeTarget": "Client",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashIn",
+      "name": "TO",
+      "description": "CashIn - Bank",
+      "nodeTarget": "Bank",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "HAS_SSN",
+      "description": "Client - SSN",
+      "nodeTarget": "SSN",
+      "label": "HAS_SSN",
+      "properties": []
+    },
+    {
+      "nodeSource": "Debit",
+      "name": "TO",
+      "description": "Debit - Bank",
+      "nodeTarget": "Bank",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Payment",
+      "name": "TO",
+      "description": "Payment - Client",
+      "nodeTarget": "Client",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashOut",
+      "name": "TO",
+      "description": "CashOut - Merchant",
+      "nodeTarget": "Merchant",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Debit",
+      "name": "TO",
+      "description": "Debit - Merchant",
+      "nodeTarget": "Merchant",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "LAST_TX",
+      "description": "Client - Transaction",
+      "nodeTarget": "Transaction",
+      "label": "LAST_TX",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "LAST_TX",
+      "description": "Client - CashOut",
+      "nodeTarget": "CashOut",
+      "label": "LAST_TX",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashOut",
+      "name": "TO",
+      "description": "CashOut - Bank",
+      "nodeTarget": "Bank",
+      "label": "TO",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "LAST_TX",
+      "description": "Client - Debit",
+      "nodeTarget": "Debit",
+      "label": "LAST_TX",
+      "properties": []
+    },
+    {
+      "nodeSource": "Client",
+      "name": "LAST_TX",
+      "description": "Client - Payment",
+      "nodeTarget": "Payment",
+      "label": "LAST_TX",
+      "properties": []
+    },
+    {
+      "nodeSource": "CashOut",
+      "name": "TO",
+      "description": "CashOut - Client",
+      "nodeTarget": "Client",
+      "label": "TO",
+      "properties": []
+    }
+  ],
+  "nodes": [
+    {
+      "presentation": {
+        "x": 1200,
+        "y": 300
+      },
+      "name": "Client",
+      "properties": [
+        {
+          "indexed": false,
+          "unique": false,
+          "name": "name",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": false,
+          "unique": false,
+          "name": "ssn",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": false,
+          "unique": false,
+          "name": "email",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Client"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 1280,
+        "y": -40
+      },
+      "name": "CashOut",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": true,
+          "unique": false,
+          "name": "globalStep",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "CashOut"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 860,
+        "y": 840
+      },
+      "name": "CashIn",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": false,
+          "name": "globalStep",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "CashIn"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 1860,
+        "y": -40
+      },
+      "name": "Transfer",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": true,
+          "unique": false,
+          "name": "globalStep",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Transfer"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 300,
+        "y": 480
+      },
+      "name": "Phone",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "phoneNumber",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Phone"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 1560,
+        "y": 120
+      },
+      "name": "Transaction",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": true,
+          "unique": false,
+          "name": "fraud",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": true,
+          "unique": false,
+          "name": "globalStep",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": false,
+          "unique": false,
+          "name": "amount",
+          "type": "Float",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Transaction"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 580,
+        "y": 1020
+      },
+      "name": "Merchant",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": true,
+          "unique": false,
+          "name": "highRisk",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Merchant"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 1060,
+        "y": 660
+      },
+      "name": "Payment",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": true,
+          "unique": false,
+          "name": "globalStep",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Payment"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 120,
+        "y": 480
+      },
+      "name": "SSN",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "ssn",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "SSN"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 1680,
+        "y": -40
+      },
+      "name": "Node",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": false,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Node"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 1500,
+        "y": -40
+      },
+      "name": "Mule",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Mule"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 480,
+        "y": 480
+      },
+      "name": "Email",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "email",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Email"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 760,
+        "y": 1020
+      },
+      "name": "Bank",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Bank"
+      ]
+    },
+    {
+      "presentation": {
+        "x": 1420,
+        "y": 480
+      },
+      "name": "Debit",
+      "properties": [
+        {
+          "indexed": true,
+          "unique": false,
+          "name": "globalStep",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        },
+        {
+          "indexed": true,
+          "unique": true,
+          "name": "id",
+          "type": "String",
+          "mandatory": false,
+          "primary": false
+        }
+      ],
+      "labels": [
+        "Debit"
+      ]
+    }
+  ],
+  "name": "test-model"
+}

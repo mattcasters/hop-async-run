@@ -130,6 +130,14 @@ public class AsyncStatusServlet extends BaseHttpServlet implements IHopServerPlu
         status.getStatusVariables().put(statusVariable, statusValue);
       }
 
+      // Add the pipeline statuses found in the parent workflow...
+      //
+      for (Object dataValue : workflow.getExtensionDataMap().values()) {
+        if (dataValue instanceof HopServerPipelineStatus) {
+          status.getPipelineStatuses().add( (HopServerPipelineStatus) dataValue );
+        }
+      }
+
       // We give back all this information about the executing workflow in JSON format...
       //
       response.setContentType("application/json");
@@ -139,7 +147,9 @@ public class AsyncStatusServlet extends BaseHttpServlet implements IHopServerPlu
       ObjectMapper mapper = new ObjectMapper();
       String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(status);
 
-      outputStream.write(jsonString.getBytes( StandardCharsets.UTF_8 ));
+      byte[] data = jsonString.getBytes( StandardCharsets.UTF_8 );
+      response.setContentLength( data.length );
+      outputStream.write(data);
       outputStream.flush();
 
       response.setStatus(HttpServletResponse.SC_OK);

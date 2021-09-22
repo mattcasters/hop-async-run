@@ -1,0 +1,2562 @@
+{
+	"source": {
+		"projectId": "neo4j-solutions-workbench"
+	},
+	"dataModel": {
+		"isRemotelyPersisted": false,
+		"nodeLabels": {
+			"Node10": {
+				"classType": "NodeLabel",
+				"label": "CashOut",
+				"fromDataSources": [],
+				"key": "Node10",
+				"indexes": [],
+				"properties": {
+					"Prop79": {
+						"key": "Prop79",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop10": {
+						"key": "Prop10",
+						"name": "globalStep",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 1280,
+					"y": -40,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node6": {
+				"classType": "NodeLabel",
+				"label": "Payment",
+				"fromDataSources": [],
+				"key": "Node6",
+				"indexes": [],
+				"properties": {
+					"Prop6": {
+						"key": "Prop6",
+						"name": "globalStep",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop77": {
+						"key": "Prop77",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 1060,
+					"y": 660,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node5": {
+				"classType": "NodeLabel",
+				"label": "SSN",
+				"fromDataSources": [],
+				"key": "Node5",
+				"indexes": [],
+				"properties": {
+					"Prop73": {
+						"key": "Prop73",
+						"name": "ssn",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 120,
+					"y": 480,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node9": {
+				"classType": "NodeLabel",
+				"label": "Phone",
+				"fromDataSources": [],
+				"key": "Node9",
+				"indexes": [],
+				"properties": {
+					"Prop80": {
+						"key": "Prop80",
+						"name": "phoneNumber",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 300,
+					"y": 480,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node2": {
+				"classType": "NodeLabel",
+				"label": "Email",
+				"fromDataSources": [],
+				"key": "Node2",
+				"indexes": [],
+				"properties": {
+					"Prop72": {
+						"key": "Prop72",
+						"name": "email",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 480,
+					"y": 480,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node7": {
+				"classType": "NodeLabel",
+				"label": "Merchant",
+				"fromDataSources": [],
+				"key": "Node7",
+				"indexes": [],
+				"properties": {
+					"Prop81": {
+						"key": "Prop81",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop7": {
+						"key": "Prop7",
+						"name": "highRisk",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 580,
+					"y": 1020,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node3": {
+				"classType": "NodeLabel",
+				"label": "Mule",
+				"fromDataSources": [],
+				"key": "Node3",
+				"indexes": [],
+				"properties": {
+					"Prop76": {
+						"key": "Prop76",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 1500,
+					"y": -40,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node4": {
+				"classType": "NodeLabel",
+				"label": "Node",
+				"fromDataSources": [],
+				"key": "Node4",
+				"indexes": [],
+				"properties": {
+					"Prop4": {
+						"key": "Prop4",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 1680,
+					"y": -40,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node0": {
+				"classType": "NodeLabel",
+				"label": "Debit",
+				"fromDataSources": [],
+				"key": "Node0",
+				"indexes": [],
+				"properties": {
+					"Prop0": {
+						"key": "Prop0",
+						"name": "globalStep",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop70": {
+						"key": "Prop70",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 1420,
+					"y": 480,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node11": {
+				"classType": "NodeLabel",
+				"label": "Transfer",
+				"fromDataSources": [],
+				"key": "Node11",
+				"indexes": [],
+				"properties": {
+					"Prop11": {
+						"key": "Prop11",
+						"name": "globalStep",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop78": {
+						"key": "Prop78",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 1860,
+					"y": -40,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node8": {
+				"classType": "NodeLabel",
+				"label": "Transaction",
+				"fromDataSources": [],
+				"key": "Node8",
+				"indexes": [],
+				"properties": {
+					"Prop5": {
+						"key": "Prop5",
+						"name": "amount",
+						"datatype": "Float",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": false,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop9": {
+						"key": "Prop9",
+						"name": "globalStep",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop8": {
+						"key": "Prop8",
+						"name": "fraud",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop71": {
+						"key": "Prop71",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 1560,
+					"y": 120,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node13": {
+				"classType": "NodeLabel",
+				"label": "Client",
+				"fromDataSources": [],
+				"key": "Node13",
+				"indexes": [],
+				"properties": {
+					"Prop3": {
+						"key": "Prop3",
+						"name": "email",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": false,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop2": {
+						"key": "Prop2",
+						"name": "ssn",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": false,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop1": {
+						"key": "Prop1",
+						"name": "name",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": false,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop82": {
+						"key": "Prop82",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 1200,
+					"y": 300,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node1": {
+				"classType": "NodeLabel",
+				"label": "Bank",
+				"fromDataSources": [],
+				"key": "Node1",
+				"indexes": [],
+				"properties": {
+					"Prop74": {
+						"key": "Prop74",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 760,
+					"y": 1020,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			},
+			"Node12": {
+				"classType": "NodeLabel",
+				"label": "CashIn",
+				"fromDataSources": [],
+				"key": "Node12",
+				"indexes": [],
+				"properties": {
+					"Prop75": {
+						"key": "Prop75",
+						"name": "id",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": true,
+						"dataChangedSinceLastSave": false
+					},
+					"Prop12": {
+						"key": "Prop12",
+						"name": "globalStep",
+						"datatype": "String",
+						"referenceData": null,
+						"description": null,
+						"fromDataSources": [],
+						"isPartOfKey": false,
+						"isArray": false,
+						"isIndexed": true,
+						"mustExist": false,
+						"hasUniqueConstraint": false,
+						"dataChangedSinceLastSave": false
+					}
+				},
+				"secondaryNodeLabelKeys": [],
+				"isOnlySecondaryNodeLabel": false,
+				"description": null,
+				"referenceData": "{\"secondaryNodeLabelKeys\":[],\"isOnlySecondaryNodeLabel\":false}",
+				"removedPropertyKeysSinceLastSave": [],
+				"dataChangedSinceLastSave": false,
+				"displayChangedSinceLastSave": false,
+				"display": {
+					"color": "white",
+					"stroke": "black",
+					"strokeWidth": 4,
+					"x": 860,
+					"y": 840,
+					"radius": 40,
+					"size": "md",
+					"width": 80,
+					"height": 80,
+					"fontSize": 14,
+					"fontColor": "black",
+					"textLocation": "middle",
+					"isLocked": false,
+					"glyphs": []
+				}
+			}
+		},
+		"relationshipTypes": {
+			"Rel55": {
+				"classType": "RelationshipType",
+				"key": "Rel55",
+				"type": "TO",
+				"startNodeLabelKey": "Node10",
+				"endNodeLabelKey": "Node7",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel27": {
+				"classType": "RelationshipType",
+				"key": "Rel27",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node10",
+				"endNodeLabelKey": "Node10",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel59": {
+				"classType": "RelationshipType",
+				"key": "Rel59",
+				"type": "TO",
+				"startNodeLabelKey": "Node10",
+				"endNodeLabelKey": "Node1",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel25": {
+				"classType": "RelationshipType",
+				"key": "Rel25",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node6",
+				"endNodeLabelKey": "Node0",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel32": {
+				"classType": "RelationshipType",
+				"key": "Rel32",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node6",
+				"endNodeLabelKey": "Node10",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel20": {
+				"classType": "RelationshipType",
+				"key": "Rel20",
+				"type": "PERFORMED",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node0",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel17": {
+				"classType": "RelationshipType",
+				"key": "Rel17",
+				"type": "LAST_TX",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node8",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel21": {
+				"classType": "RelationshipType",
+				"key": "Rel21",
+				"type": "PERFORMED",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node8",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel14": {
+				"classType": "RelationshipType",
+				"key": "Rel14",
+				"type": "LAST_TX",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node6",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel26": {
+				"classType": "RelationshipType",
+				"key": "Rel26",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node0",
+				"endNodeLabelKey": "Node8",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel63": {
+				"classType": "RelationshipType",
+				"key": "Rel63",
+				"type": "TO",
+				"startNodeLabelKey": "Node8",
+				"endNodeLabelKey": "Node13",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel39": {
+				"classType": "RelationshipType",
+				"key": "Rel39",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node10",
+				"endNodeLabelKey": "Node8",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel16": {
+				"classType": "RelationshipType",
+				"key": "Rel16",
+				"type": "LAST_TX",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node10",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel65": {
+				"classType": "RelationshipType",
+				"key": "Rel65",
+				"type": "FIRST_TX",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node0",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel54": {
+				"classType": "RelationshipType",
+				"key": "Rel54",
+				"type": "TO",
+				"startNodeLabelKey": "Node0",
+				"endNodeLabelKey": "Node7",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel19": {
+				"classType": "RelationshipType",
+				"key": "Rel19",
+				"type": "PERFORMED",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node10",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel38": {
+				"classType": "RelationshipType",
+				"key": "Rel38",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node10",
+				"endNodeLabelKey": "Node6",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel40": {
+				"classType": "RelationshipType",
+				"key": "Rel40",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node0",
+				"endNodeLabelKey": "Node0",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel37": {
+				"classType": "RelationshipType",
+				"key": "Rel37",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node10",
+				"endNodeLabelKey": "Node12",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel46": {
+				"classType": "RelationshipType",
+				"key": "Rel46",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node10",
+				"endNodeLabelKey": "Node0",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel22": {
+				"classType": "RelationshipType",
+				"key": "Rel22",
+				"type": "PERFORMED",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node12",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel48": {
+				"classType": "RelationshipType",
+				"key": "Rel48",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node12",
+				"endNodeLabelKey": "Node8",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel61": {
+				"classType": "RelationshipType",
+				"key": "Rel61",
+				"type": "TO",
+				"startNodeLabelKey": "Node0",
+				"endNodeLabelKey": "Node13",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel43": {
+				"classType": "RelationshipType",
+				"key": "Rel43",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node0",
+				"endNodeLabelKey": "Node6",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel30": {
+				"classType": "RelationshipType",
+				"key": "Rel30",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node0",
+				"endNodeLabelKey": "Node10",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel44": {
+				"classType": "RelationshipType",
+				"key": "Rel44",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node6",
+				"endNodeLabelKey": "Node12",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel41": {
+				"classType": "RelationshipType",
+				"key": "Rel41",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node12",
+				"endNodeLabelKey": "Node6",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel42": {
+				"classType": "RelationshipType",
+				"key": "Rel42",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node12",
+				"endNodeLabelKey": "Node12",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel58": {
+				"classType": "RelationshipType",
+				"key": "Rel58",
+				"type": "TO",
+				"startNodeLabelKey": "Node10",
+				"endNodeLabelKey": "Node13",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel53": {
+				"classType": "RelationshipType",
+				"key": "Rel53",
+				"type": "TO",
+				"startNodeLabelKey": "Node12",
+				"endNodeLabelKey": "Node7",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel35": {
+				"classType": "RelationshipType",
+				"key": "Rel35",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node8",
+				"endNodeLabelKey": "Node8",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel45": {
+				"classType": "RelationshipType",
+				"key": "Rel45",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node8",
+				"endNodeLabelKey": "Node0",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel64": {
+				"classType": "RelationshipType",
+				"key": "Rel64",
+				"type": "TO",
+				"startNodeLabelKey": "Node8",
+				"endNodeLabelKey": "Node7",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel56": {
+				"classType": "RelationshipType",
+				"key": "Rel56",
+				"type": "TO",
+				"startNodeLabelKey": "Node6",
+				"endNodeLabelKey": "Node13",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel13": {
+				"classType": "RelationshipType",
+				"key": "Rel13",
+				"type": "HAS_SSN",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node5",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel52": {
+				"classType": "RelationshipType",
+				"key": "Rel52",
+				"type": "TO",
+				"startNodeLabelKey": "Node6",
+				"endNodeLabelKey": "Node1",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel68": {
+				"classType": "RelationshipType",
+				"key": "Rel68",
+				"type": "FIRST_TX",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node10",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel67": {
+				"classType": "RelationshipType",
+				"key": "Rel67",
+				"type": "FIRST_TX",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node12",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel36": {
+				"classType": "RelationshipType",
+				"key": "Rel36",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node8",
+				"endNodeLabelKey": "Node6",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel18": {
+				"classType": "RelationshipType",
+				"key": "Rel18",
+				"type": "LAST_TX",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node12",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel51": {
+				"classType": "RelationshipType",
+				"key": "Rel51",
+				"type": "TO",
+				"startNodeLabelKey": "Node12",
+				"endNodeLabelKey": "Node13",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel66": {
+				"classType": "RelationshipType",
+				"key": "Rel66",
+				"type": "FIRST_TX",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node6",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel60": {
+				"classType": "RelationshipType",
+				"key": "Rel60",
+				"type": "TO",
+				"startNodeLabelKey": "Node8",
+				"endNodeLabelKey": "Node1",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel47": {
+				"classType": "RelationshipType",
+				"key": "Rel47",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node6",
+				"endNodeLabelKey": "Node6",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel33": {
+				"classType": "RelationshipType",
+				"key": "Rel33",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node12",
+				"endNodeLabelKey": "Node0",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel28": {
+				"classType": "RelationshipType",
+				"key": "Rel28",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node0",
+				"endNodeLabelKey": "Node12",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel69": {
+				"classType": "RelationshipType",
+				"key": "Rel69",
+				"type": "FIRST_TX",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node8",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel57": {
+				"classType": "RelationshipType",
+				"key": "Rel57",
+				"type": "TO",
+				"startNodeLabelKey": "Node0",
+				"endNodeLabelKey": "Node1",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel31": {
+				"classType": "RelationshipType",
+				"key": "Rel31",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node6",
+				"endNodeLabelKey": "Node8",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel24": {
+				"classType": "RelationshipType",
+				"key": "Rel24",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node8",
+				"endNodeLabelKey": "Node12",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel49": {
+				"classType": "RelationshipType",
+				"key": "Rel49",
+				"type": "HAS_EMAIL",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node2",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel23": {
+				"classType": "RelationshipType",
+				"key": "Rel23",
+				"type": "PERFORMED",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node6",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel34": {
+				"classType": "RelationshipType",
+				"key": "Rel34",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node12",
+				"endNodeLabelKey": "Node10",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel29": {
+				"classType": "RelationshipType",
+				"key": "Rel29",
+				"type": "NEXT",
+				"startNodeLabelKey": "Node8",
+				"endNodeLabelKey": "Node10",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel15": {
+				"classType": "RelationshipType",
+				"key": "Rel15",
+				"type": "LAST_TX",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node0",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel62": {
+				"classType": "RelationshipType",
+				"key": "Rel62",
+				"type": "TO",
+				"startNodeLabelKey": "Node6",
+				"endNodeLabelKey": "Node7",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel50": {
+				"classType": "RelationshipType",
+				"key": "Rel50",
+				"type": "TO",
+				"startNodeLabelKey": "Node12",
+				"endNodeLabelKey": "Node1",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			},
+			"Rel70": {
+				"classType": "RelationshipType",
+				"key": "Rel70",
+				"type": "HAS_PHONE",
+				"startNodeLabelKey": "Node13",
+				"endNodeLabelKey": "Node9",
+				"properties": {},
+				"referenceData": {},
+				"description": null,
+				"outMinCardinality": "0",
+				"outMaxCardinality": "many",
+				"inMinCardinality": "0",
+				"inMaxCardinality": "many",
+				"display": {
+					"color": "black",
+					"fontSize": 14,
+					"strokeWidth": 3,
+					"offset": 0,
+					"glyph": null
+				},
+				"dataChangedSinceLastSave": false,
+				"removedPropertyKeysSinceLastSave": []
+			}
+		},
+		"excludeValidationSections": [],
+		"deletedNodeLabelKeysSinceLastSave": [],
+		"deletedRelationshipTypeKeysSinceLastSave": [],
+		"deletedDataSourceKeysSinceLastSave": [],
+		"timestamp": 1630418176863
+	},
+	"dataMappings": [
+		{
+			"source": {
+				"datasetId": "Paysim",
+				"tableDefinition": {
+					"myObjectName": "TableDefinition",
+					"key": "transactions",
+					"name": "transactions",
+					"columnDefinitions": [
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "amount",
+							"name": "amount",
+							"datatype": "FLOAT64",
+							"ordinalPosition": 1,
+							"constraints": {},
+							"metadata": {}
+						},
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "flagged_fraud",
+							"name": "flagged_fraud",
+							"datatype": "BOOL",
+							"ordinalPosition": 2,
+							"constraints": {},
+							"metadata": {}
+						},
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "false",
+							"name": "false",
+							"datatype": "BOOL",
+							"ordinalPosition": 3,
+							"constraints": {},
+							"metadata": {}
+						},
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "global_step",
+							"name": "global_step",
+							"datatype": "INT64",
+							"ordinalPosition": 4,
+							"constraints": {},
+							"metadata": {}
+						},
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "id",
+							"name": "id",
+							"datatype": "STRING",
+							"ordinalPosition": 5,
+							"constraints": {},
+							"metadata": {}
+						},
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "new",
+							"name": "new",
+							"datatype": "BOOL",
+							"ordinalPosition": 6,
+							"constraints": {},
+							"metadata": {}
+						},
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "receiver_id",
+							"name": "receiver_id",
+							"datatype": "STRING",
+							"ordinalPosition": 7,
+							"constraints": {},
+							"metadata": {}
+						},
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "sender_id",
+							"name": "sender_id",
+							"datatype": "STRING",
+							"ordinalPosition": 8,
+							"constraints": {},
+							"metadata": {}
+						},
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "step",
+							"name": "step",
+							"datatype": "INT64",
+							"ordinalPosition": 9,
+							"constraints": {},
+							"metadata": {}
+						},
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "tsm",
+							"name": "tsm",
+							"datatype": "INT64",
+							"ordinalPosition": 10,
+							"constraints": {},
+							"metadata": {}
+						},
+						{
+							"myObjectName": "ColumnDefinition",
+							"key": "second_label",
+							"name": "second_label",
+							"datatype": "STRING",
+							"ordinalPosition": 11,
+							"constraints": {},
+							"metadata": {}
+						}
+					],
+					"constraints": {},
+					"metadata": {}
+				}
+			},
+			"cypherPatterns": {
+				"nodePatternMap": {
+					"Node2": {
+						"key": "Node2",
+						"variable": "client1",
+						"nodeLabels": [
+							"Client"
+						]
+					},
+					"Node3": {
+						"key": "Node3",
+						"variable": "transaction1",
+						"nodeLabels": [
+							"Transaction"
+						]
+					}
+				},
+				"relationshipPatternMap": {
+					"Rel3": {
+						"startNodePattern": {
+							"key": "Node2",
+							"variable": "client1",
+							"nodeLabels": [
+								"Client"
+							]
+						},
+						"relationshipPattern": {
+							"key": "Rel3",
+							"variable": "",
+							"type": "PERFORMED"
+						},
+						"endNodePattern": {
+							"key": "Node3",
+							"variable": "transaction1",
+							"nodeLabels": [
+								"Transaction"
+							]
+						}
+					}
+				}
+			},
+			"nodeDataMappings": {
+				"Paysim_clients_id_np_Node2_Prop82": {
+					"key": "Paysim_clients_id_np_Node2_Prop82",
+					"source": {
+						"key": "Paysim_clients_id",
+						"columnDefinition": {
+							"key": "id",
+							"name": "id",
+							"datatype": "STRING",
+							"ordinalPosition": 1
+						}
+					},
+					"destination": {
+						"key": "np_Node2_Prop82",
+						"nodePattern": {
+							"key": "Node2",
+							"variable": "client1",
+							"nodeLabels": [
+								"Client"
+							],
+							"nodeLabelKey": "Node13"
+						},
+						"propertyDefinition": {
+							"key": "Prop82",
+							"name": "id",
+							"datatype": "String",
+							"isPartOfKey": false,
+							"hasUniqueConstraint": true,
+							"isIndexed": true,
+							"mustExist": false
+						}
+					}
+				},
+				"Paysim_clients_name_np_Node2_Prop1": {
+					"key": "Paysim_clients_name_np_Node2_Prop1",
+					"source": {
+						"key": "Paysim_clients_name",
+						"columnDefinition": {
+							"key": "name",
+							"name": "name",
+							"datatype": "STRING",
+							"ordinalPosition": 2
+						}
+					},
+					"destination": {
+						"key": "np_Node2_Prop1",
+						"nodePattern": {
+							"key": "Node2",
+							"variable": "client1",
+							"nodeLabels": [
+								"Client"
+							],
+							"nodeLabelKey": "Node13"
+						},
+						"propertyDefinition": {
+							"key": "Prop1",
+							"name": "name",
+							"datatype": "String",
+							"isPartOfKey": false,
+							"hasUniqueConstraint": false,
+							"isIndexed": false,
+							"mustExist": false
+						}
+					}
+				},
+				"Paysim_clients_ssn_np_Node2_Prop2": {
+					"key": "Paysim_clients_ssn_np_Node2_Prop2",
+					"source": {
+						"key": "Paysim_clients_ssn",
+						"columnDefinition": {
+							"key": "ssn",
+							"name": "ssn",
+							"datatype": "STRING",
+							"ordinalPosition": 3
+						}
+					},
+					"destination": {
+						"key": "np_Node2_Prop2",
+						"nodePattern": {
+							"key": "Node2",
+							"variable": "client1",
+							"nodeLabels": [
+								"Client"
+							],
+							"nodeLabelKey": "Node13"
+						},
+						"propertyDefinition": {
+							"key": "Prop2",
+							"name": "ssn",
+							"datatype": "String",
+							"isPartOfKey": false,
+							"hasUniqueConstraint": false,
+							"isIndexed": false,
+							"mustExist": false
+						}
+					}
+				},
+				"Paysim_clients_email_np_Node2_Prop3": {
+					"key": "Paysim_clients_email_np_Node2_Prop3",
+					"source": {
+						"key": "Paysim_clients_email",
+						"columnDefinition": {
+							"key": "email",
+							"name": "email",
+							"datatype": "STRING",
+							"ordinalPosition": 5
+						}
+					},
+					"destination": {
+						"key": "np_Node2_Prop3",
+						"nodePattern": {
+							"key": "Node2",
+							"variable": "client1",
+							"nodeLabels": [
+								"Client"
+							],
+							"nodeLabelKey": "Node13"
+						},
+						"propertyDefinition": {
+							"key": "Prop3",
+							"name": "email",
+							"datatype": "String",
+							"isPartOfKey": false,
+							"hasUniqueConstraint": false,
+							"isIndexed": false,
+							"mustExist": false
+						}
+					}
+				},
+				"Paysim_transactions_amount_np_Node3_Prop5": {
+					"key": "Paysim_transactions_amount_np_Node3_Prop5",
+					"source": {
+						"key": "Paysim_transactions_amount",
+						"columnDefinition": {
+							"key": "amount",
+							"name": "amount",
+							"datatype": "FLOAT64",
+							"ordinalPosition": 1
+						}
+					},
+					"destination": {
+						"key": "np_Node3_Prop5",
+						"nodePattern": {
+							"key": "Node3",
+							"variable": "transaction1",
+							"nodeLabels": [
+								"Transaction"
+							],
+							"nodeLabelKey": "Node8"
+						},
+						"propertyDefinition": {
+							"key": "Prop5",
+							"name": "amount",
+							"datatype": "Float",
+							"isPartOfKey": false,
+							"hasUniqueConstraint": false,
+							"isIndexed": false,
+							"mustExist": false
+						}
+					}
+				},
+				"Paysim_transactions_flagged_fraud_np_Node3_Prop8": {
+					"key": "Paysim_transactions_flagged_fraud_np_Node3_Prop8",
+					"source": {
+						"key": "Paysim_transactions_flagged_fraud",
+						"columnDefinition": {
+							"key": "flagged_fraud",
+							"name": "flagged_fraud",
+							"datatype": "BOOL",
+							"ordinalPosition": 2
+						}
+					},
+					"destination": {
+						"key": "np_Node3_Prop8",
+						"nodePattern": {
+							"key": "Node3",
+							"variable": "transaction1",
+							"nodeLabels": [
+								"Transaction"
+							],
+							"nodeLabelKey": "Node8"
+						},
+						"propertyDefinition": {
+							"key": "Prop8",
+							"name": "fraud",
+							"datatype": "String",
+							"isPartOfKey": false,
+							"hasUniqueConstraint": false,
+							"isIndexed": true,
+							"mustExist": false
+						}
+					}
+				},
+				"Paysim_transactions_id_np_Node3_Prop71": {
+					"key": "Paysim_transactions_id_np_Node3_Prop71",
+					"source": {
+						"key": "Paysim_transactions_id",
+						"columnDefinition": {
+							"key": "id",
+							"name": "id",
+							"datatype": "STRING",
+							"ordinalPosition": 5
+						}
+					},
+					"destination": {
+						"key": "np_Node3_Prop71",
+						"nodePattern": {
+							"key": "Node3",
+							"variable": "transaction1",
+							"nodeLabels": [
+								"Transaction"
+							],
+							"nodeLabelKey": "Node8"
+						},
+						"propertyDefinition": {
+							"key": "Prop71",
+							"name": "id",
+							"datatype": "String",
+							"isPartOfKey": false,
+							"hasUniqueConstraint": true,
+							"isIndexed": true,
+							"mustExist": false
+						}
+					}
+				}
+			},
+			"relationshipDataMappings": [
+				{
+					"startNodePatternKeyMappings": [
+						"Paysim_clients_id_np_Node2_Prop82"
+					],
+					"relationshipPattern": {
+						"key": "Rel3",
+						"variable": "",
+						"type": "PERFORMED",
+						"relationshipTypeKey": "Rel21"
+					},
+					"endNodePatternKeyMappings": [
+						"Paysim_transactions_id_np_Node3_Prop71"
+					],
+					"dataMappings": {}
+				}
+			]
+		}
+	]
+}

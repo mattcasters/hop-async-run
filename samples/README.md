@@ -36,7 +36,7 @@ curl -v \
   --request POST \
   -o async-run.json \
   -H "Content-Type: application/json" \
-  --data-binary '@/tmp/payload.json' \
+  --data-binary '@cypher-workbench.json' \
   'http://localhost:8282/hop/asyncRun/?service=dataload&MAX=50000000'
 ```
 

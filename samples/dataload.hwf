@@ -137,7 +137,15 @@
       <parallel>N</parallel>
       <xloc>608</xloc>
       <yloc>192</yloc>
-      <attributes_hac/>
+      <attributes_hac>
+        <group>
+          <name>ASYNC_STATUS_GROUP</name>
+          <attribute>
+            <key>enable-asynchronous-pipeline-service-name</key>
+            <value>dataload</value>
+          </attribute>
+        </group>
+      </attributes_hac>
     </action>
     <action>
       <name>Status: Processing data...</name>
@@ -260,5 +268,9 @@
   </hops>
   <notepads>
   </notepads>
-  <attributes/>
+  <attributes>
+    <group>
+      <name>debug_plugin</name>
+    </group>
+  </attributes>
 </workflow>

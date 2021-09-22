@@ -1,6 +1,8 @@
 package org.apache.hop.www;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class AsyncStatus {
@@ -10,9 +12,11 @@ public class AsyncStatus {
   private String endDate;
   private String statusDescription;
   private Map<String, String> statusVariables;
+  private List<HopServerPipelineStatus> pipelineStatuses;
 
   public AsyncStatus() {
     statusVariables = new HashMap<>();
+    pipelineStatuses = new ArrayList<>();
   }
 
   /**
@@ -109,5 +113,21 @@ public class AsyncStatus {
    */
   public void setStatusVariables( Map<String, String> statusVariables ) {
     this.statusVariables = statusVariables;
+  }
+
+  /**
+   * Gets pipelineStatuses
+   *
+   * @return value of pipelineStatuses
+   */
+  public List<HopServerPipelineStatus> getPipelineStatuses() {
+    return pipelineStatuses;
+  }
+
+  /**
+   * @param pipelineStatuses The pipelineStatuses to set
+   */
+  public void setPipelineStatuses( List<HopServerPipelineStatus> pipelineStatuses ) {
+    this.pipelineStatuses = pipelineStatuses;
   }
 }

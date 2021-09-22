@@ -218,7 +218,9 @@ public class AsyncWebServiceEditor extends MetadataEditor<AsyncWebService> {
     fdContentVar.top = new FormAttachment(wlContentVar, 0, SWT.CENTER);
     wContentVar.setLayoutData(fdContentVar);
     // lastControl = wlContentVar;
-    
+
+    setWidgetsContent();
+
     // Add listener to detect change after loading data
     ModifyListener lsMod = e -> setChanged();
     wName.addModifyListener(lsMod);
@@ -226,8 +228,6 @@ public class AsyncWebServiceEditor extends MetadataEditor<AsyncWebService> {
     wFilename.addModifyListener(lsMod);
     wStatusVars.addModifyListener(lsMod);
     wContentVar.addModifyListener(lsMod);
-
-    setWidgetsContent();
   }
 
   /**
