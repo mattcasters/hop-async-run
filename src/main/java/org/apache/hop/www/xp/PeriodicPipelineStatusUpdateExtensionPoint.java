@@ -184,8 +184,10 @@ public class PeriodicPipelineStatusUpdateExtensionPoint
     pipelineStatus.setLoggingString(loggingString);
 
     // Also set the result object...
+    // Ignore the result for now
+    // Causes issues with result files and concurrent hashmaps
     //
-    pipelineStatus.setResult(pipeline.getResult());
+    // pipelineStatus.setResult(pipeline.getResult());
 
     // Is the pipeline paused?
     //

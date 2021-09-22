@@ -132,6 +132,7 @@ public class AsyncRunServlet extends BaseHttpServlet implements IHopServerPlugin
       workflow.setContainerId(serverObjectId);
       workflow.setMetadataProvider( metadataProvider );
       workflow.setLogLevel( LogLevel.BASIC );
+      workflow.setVariable( "SERVER_OBJECT_ID", serverObjectId );
 
       // See if we need to pass a variable with the content in it...
       //
