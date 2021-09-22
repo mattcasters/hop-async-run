@@ -1,6 +1,9 @@
 package org.apache.hop.www;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,13 +11,21 @@ import java.util.Map;
 public class AsyncStatus {
   private String service;
   private String id;
-  private String startDate;
-  private String endDate;
+
+  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+  private Date logDate;
+
+  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+  private Date startDate;
+
+  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+  private Date endDate;
   private String statusDescription;
   private Map<String, String> statusVariables;
   private List<HopServerPipelineStatus> pipelineStatuses;
 
   public AsyncStatus() {
+    logDate = new Date();
     statusVariables = new HashMap<>();
     pipelineStatuses = new ArrayList<>();
   }
@@ -52,18 +63,34 @@ public class AsyncStatus {
   }
 
   /**
+   * Gets logDate
+   *
+   * @return value of logDate
+   */
+  public Date getLogDate() {
+    return logDate;
+  }
+
+  /**
+   * @param logDate The logDate to set
+   */
+  public void setLogDate( Date logDate ) {
+    this.logDate = logDate;
+  }
+
+  /**
    * Gets startDate
    *
    * @return value of startDate
    */
-  public String getStartDate() {
+  public Date getStartDate() {
     return startDate;
   }
 
   /**
    * @param startDate The startDate to set
    */
-  public void setStartDate( String startDate ) {
+  public void setStartDate( Date startDate ) {
     this.startDate = startDate;
   }
 
@@ -72,14 +99,14 @@ public class AsyncStatus {
    *
    * @return value of endDate
    */
-  public String getEndDate() {
+  public Date getEndDate() {
     return endDate;
   }
 
   /**
    * @param endDate The endDate to set
    */
-  public void setEndDate( String endDate ) {
+  public void setEndDate( Date endDate ) {
     this.endDate = endDate;
   }
 

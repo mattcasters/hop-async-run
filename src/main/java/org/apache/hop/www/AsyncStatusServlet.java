@@ -24,7 +24,6 @@ import org.apache.hop.core.annotations.HopServerServlet;
 import org.apache.hop.core.encryption.Encr;
 import org.apache.hop.core.exception.HopException;
 import org.apache.hop.core.variables.IVariables;
-import org.apache.hop.core.xml.XmlHandler;
 import org.apache.hop.i18n.BaseMessages;
 import org.apache.hop.metadata.api.IHopMetadataSerializer;
 import org.apache.hop.metadata.serializer.json.JsonMetadataProvider;
@@ -42,7 +41,9 @@ import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
-@HopServerServlet(id = "asyncStatus", name = "Get the status of an asynchronously executing workflow")
+@HopServerServlet(
+    id = "asyncStatus",
+    name = "Get the status of an asynchronously executing workflow")
 public class AsyncStatusServlet extends BaseHttpServlet implements IHopServerPlugin {
 
   private static final Class<?> PKG = WebServiceServlet.class; // For Translator
@@ -53,7 +54,7 @@ public class AsyncStatusServlet extends BaseHttpServlet implements IHopServerPlu
 
   public AsyncStatusServlet() {}
 
-  public AsyncStatusServlet( PipelineMap pipelineMap) {
+  public AsyncStatusServlet(PipelineMap pipelineMap) {
     super(pipelineMap);
   }
 
@@ -92,41 +93,42 @@ public class AsyncStatusServlet extends BaseHttpServlet implements IHopServerPlu
     String serverObjectId = request.getParameter("id");
     if (StringUtils.isEmpty(serverObjectId)) {
       throw new ServletException(
-        "Please specify an id parameter pointing to the unique ID of the asynchronous webservice object");
+          "Please specify an id parameter pointing to the unique ID of the asynchronous webservice object");
     }
 
     try {
       // Load the web service metadata
       //
       IHopMetadataSerializer<AsyncWebService> serializer =
-        metadataProvider.getSerializer(AsyncWebService.class);
+          metadataProvider.getSerializer(AsyncWebService.class);
       AsyncWebService webService = serializer.load(webServiceName);
       if (webService == null) {
         throw new HopException(
-          "Unable to find asynchronous web service '"
-            + webServiceName
-            + "'.  You can set option metadata_folder in the Hop server XML configuration");
+            "Unable to find asynchronous web service '"
+                + webServiceName
+                + "'.  You can set option metadata_folder in the Hop server XML configuration");
       }
 
       // Get the workflow...
       //
-      IWorkflowEngine<WorkflowMeta> workflow = workflowMap.findWorkflow( webServiceName, serverObjectId );
+      IWorkflowEngine<WorkflowMeta> workflow =
+          workflowMap.findWorkflow(webServiceName, serverObjectId);
 
       // Report back in JSON format
       //
       JSONObject json = new JSONObject();
       AsyncStatus status = new AsyncStatus();
 
-      status.setService(webServiceName );
-      status.setId(serverObjectId );
-      status.setStartDate( XmlHandler.date2string(workflow.getExecutionStartDate()));
-      status.setEndDate( XmlHandler.date2string(workflow.getExecutionEndDate()));
+      status.setService(webServiceName);
+      status.setId(serverObjectId);
+      status.setStartDate(workflow.getExecutionStartDate());
+      status.setEndDate(workflow.getExecutionEndDate());
       status.setStatusDescription(workflow.getStatusDescription());
 
       // Grab the status variables
       //
       for (String statusVariable : webService.getStatusVariablesList(variables)) {
-        String statusValue = workflow.getVariable( statusVariable );
+        String statusValue = workflow.getVariable(statusVariable);
         status.getStatusVariables().put(statusVariable, statusValue);
       }
 
@@ -134,7 +136,7 @@ public class AsyncStatusServlet extends BaseHttpServlet implements IHopServerPlu
       //
       for (Object dataValue : workflow.getExtensionDataMap().values()) {
         if (dataValue instanceof HopServerPipelineStatus) {
-          status.getPipelineStatuses().add( (HopServerPipelineStatus) dataValue );
+          status.getPipelineStatuses().add((HopServerPipelineStatus) dataValue);
         }
       }
 
@@ -147,8 +149,8 @@ public class AsyncStatusServlet extends BaseHttpServlet implements IHopServerPlu
       ObjectMapper mapper = new ObjectMapper();
       String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(status);
 
-      byte[] data = jsonString.getBytes( StandardCharsets.UTF_8 );
-      response.setContentLength( data.length );
+      byte[] data = jsonString.getBytes(StandardCharsets.UTF_8);
+      response.setContentLength(data.length);
       outputStream.write(data);
       outputStream.flush();
 
