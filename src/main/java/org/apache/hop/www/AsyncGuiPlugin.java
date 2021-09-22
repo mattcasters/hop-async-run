@@ -101,7 +101,7 @@ public class AsyncGuiPlugin {
       // Nothing to disable
       return;
     }
-    asyncMap.remove(Defaults.ASYNC_ACTION_PIPELINE_SERVICE_NAME, "enable");
+    asyncMap.remove(Defaults.ASYNC_ACTION_PIPELINE_SERVICE_NAME);
 
     // Flag the change
     actionMeta.setChanged();

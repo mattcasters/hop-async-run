@@ -36,9 +36,15 @@ public class MarkAsyncWorkflowActionExtensionPoint
       return;
     }
 
-    // Do we have a service name?
+    // Do we have a set of status group attributes?
     //
     Map<String, String> attributesMap = actionMeta.getAttributesMap().get( Defaults.ASYNC_STATUS_GROUP );
+    if (attributesMap==null) {
+      return;
+    }
+
+    // Do we have a service name?
+    //
     String serviceName = attributesMap.get( Defaults.ASYNC_ACTION_PIPELINE_SERVICE_NAME );
     if (serviceName==null) {
       return;
