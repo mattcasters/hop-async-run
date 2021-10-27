@@ -4,7 +4,7 @@
 
   <groupId>org.apache.hop</groupId>
   <artifactId>hop-async-run</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <packaging>jar</packaging>
 
   <name>Hop Asynchronous Run</name>
@@ -21,13 +21,12 @@
 
   <properties>
 
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <hop.version>1.0-SNAPSHOT</hop.version>
+    <hop.version>1.1.0-SNAPSHOT</hop.version>
 
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.build.timestamp.format>yyyy-MM-dd hh.mm.ss</maven.build.timestamp.format>
-
     <jandex-maven-plugin.version>1.0.8</jandex-maven-plugin.version>
   </properties>
 
@@ -91,10 +90,6 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
       </plugin>
     </plugins>
 

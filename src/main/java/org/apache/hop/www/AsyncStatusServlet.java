@@ -31,7 +31,6 @@ import org.apache.hop.metadata.serializer.multi.MultiMetadataProvider;
 import org.apache.hop.metadata.util.HopMetadataUtil;
 import org.apache.hop.workflow.WorkflowMeta;
 import org.apache.hop.workflow.engine.IWorkflowEngine;
-import org.json.simple.JSONObject;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -116,7 +115,6 @@ public class AsyncStatusServlet extends BaseHttpServlet implements IHopServerPlu
 
       // Report back in JSON format
       //
-      JSONObject json = new JSONObject();
       AsyncStatus status = new AsyncStatus();
 
       status.setService(webServiceName);

@@ -44,7 +44,7 @@
       <maximumTimeout>10</maximumTimeout>
       <scaletime>0</scaletime>
       <parallel>N</parallel>
-      <xloc>608</xloc>
+      <xloc>640</xloc>
       <yloc>80</yloc>
       <attributes_hac/>
     </action>
@@ -76,7 +76,7 @@
       <maximumTimeout>10</maximumTimeout>
       <scaletime>0</scaletime>
       <parallel>N</parallel>
-      <xloc>608</xloc>
+      <xloc>640</xloc>
       <yloc>320</yloc>
       <attributes_hac/>
     </action>
@@ -106,7 +106,7 @@
       <type>SUCCESS</type>
       <attributes/>
       <parallel>N</parallel>
-      <xloc>608</xloc>
+      <xloc>640</xloc>
       <yloc>432</yloc>
       <attributes_hac/>
     </action>
@@ -128,14 +128,13 @@
       <loglevel>Basic</loglevel>
       <set_append_logfile>N</set_append_logfile>
       <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
       <create_parent_folder>N</create_parent_folder>
       <run_configuration>local</run_configuration>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>608</xloc>
+      <xloc>1088</xloc>
       <yloc>192</yloc>
       <attributes_hac>
         <group>
@@ -200,6 +199,37 @@
       <yloc>80</yloc>
       <attributes_hac/>
     </action>
+    <action>
+      <name>Add filenames to result</name>
+      <description/>
+      <type>ADD_RESULT_FILENAMES</type>
+      <attributes/>
+      <arg_from_previous>N</arg_from_previous>
+      <fields>
+        <field>
+          <name>${PROJECT_HOME}/hop-server.xml</name>
+        </field>
+      </fields>
+      <delete_all_before>N</delete_all_before>
+      <include_subfolders>N</include_subfolders>
+      <parallel>N</parallel>
+      <xloc>864</xloc>
+      <yloc>192</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Log filename</name>
+      <description/>
+      <type>WRITE_TO_LOG</type>
+      <attributes/>
+      <logmessage>Filename = ${PROJECT_HOME}/hop-server.xml</logmessage>
+      <loglevel>Basic</loglevel>
+      <logsubject>Filename</logsubject>
+      <parallel>N</parallel>
+      <xloc>656</xloc>
+      <yloc>192</yloc>
+      <attributes_hac/>
+    </action>
   </actions>
   <hops>
     <hop>
@@ -219,13 +249,6 @@
     <hop>
       <from>wait 10s</from>
       <to>Status: Processing data...</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Status: Processing data...</from>
-      <to>dataload.hpl</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
@@ -264,6 +287,27 @@
       <enabled>Y</enabled>
       <evaluation>N</evaluation>
       <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Add filenames to result</from>
+      <to>dataload.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Status: Processing data...</from>
+      <to>Log filename</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Log filename</from>
+      <to>Add filenames to result</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
     </hop>
   </hops>
   <notepads>
